@@ -1,14 +1,14 @@
 #include <stdio.h>
 void rotateleftbyone(int arr[],int n){
     int temp = arr[0];
-    for (i=0;i<n-1;i++){
+    for (int i=0;i<n-1;i++){
         arr[i]= arr[i+1];
     }
     arr[n-1]=temp;
 }
 void rotaterightbyone(int arr[],int n){
     int temp=arr[n-1];
-    for (i=n-1;i>0;i--){
+    for (int i=n-1;i>0;i--){
         arr[i] = arr[i-1];
     }
     arr[0]=temp;
@@ -18,7 +18,7 @@ int main(){
     int n;
     scanf("%d", &n);
     int arr[n];
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         printf("enter %d element:", i+1);
         scanf("%d", &arr[i]);
     }
@@ -41,6 +41,10 @@ int main(){
         printf("Invalid direction! Use 'l' for left or 'r' for right.\n");
         return 1;
     }
-
+for(int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
 
 }
