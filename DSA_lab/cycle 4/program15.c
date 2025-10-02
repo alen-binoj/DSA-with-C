@@ -35,7 +35,7 @@ int main() {
         scanf("%d %d %d", &B[i].row, &B[i].col, &B[i].value);
     }
 
-    // Check if addition possible
+    
     if(A[0].row != B[0].row || A[0].col != B[0].col) {
         printf("Addition not possible. Matrix dimensions do not match.\n");
         return 0;
